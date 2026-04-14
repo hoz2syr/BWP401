@@ -1,0 +1,152 @@
+/* 
+    BWP401 - ملف التصميم الأساسي
+    --------------------------------
+    هذا الملف يحتوي على القواعد الأساسية للتصميم
+    يمكن لأعضاء الفريق إضافة تعديلات إضافية هنا
+*/
+
+/* ==================
+   القواعد العامة
+   ================== */
+* {
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* ==================
+   الألوان المخصصة
+   ================== */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+}
+
+/* ==================
+   التنقل والهيدر
+   ================== */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+/* ==================
+   البطاقات (Cards)
+   ================== */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* ==================
+   الأزرار (Buttons)
+   ================== */
+.btn {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+/* ==================
+   الفوتر (Footer)
+   ================== */
+footer {
+    margin-top: auto;
+}
+
+/* ==================
+   النماذج (Forms)
+   ================== */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    padding: 12px 15px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* ==================
+   التنبيهات (Alerts)
+   ================== */
+.alert {
+    border-radius: 10px;
+    border: none;
+    padding: 15px 20px;
+}
+
+/* ==================
+   أزرار الحالة (Badges)
+   ================== */
+.badge {
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* ==================
+   الوضع الداكن (Dark Mode) - قابلة للإضافة لاحقاً
+   ================== */
+/* 
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+*/
+
+/* ==================
+   الربط العلوي (Scroll to Top)
+   ================== */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+/* ==================
+   التنسيق المتجاوب (Responsive)
+   ================== */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
